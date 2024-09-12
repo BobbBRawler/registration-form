@@ -4,20 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Forn</title>
+    <style>
+
+  body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 234, 232);
+
+}
+  .form{
+    display: block;
+    width: 400px;
+    background-color: transparent;
+    color: white;
+    background: url(94a382b7-8832-4f9c-8981-1e114f2492be.jpeg) no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+  
+  #btn{
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+
+    </style>
   </head>
   <body>
-    <h1>REGISTRATION FORM</h1>
     <form action="https://formsubmit.co/ravikishorekollana728@gmail.com" method="post">
+      <div class="form">
+
+      <h1 style="text-align: center;">REGISTRATION FORM</h1>
       <!-- first name -->
       <label for="firstname">First Name :</label>
       <input
-        type="text"
-        id="firstname"
-        placeholder="Enter First Name"
-        name="firstname"
-        required
-        autofocus
-      />
+        type="text" id="firstname"placeholder="Enter First Name" name="firstname" required autofocus />
+        <br> <br>
 
       <!-- Lastname -->
       <label for="Lastname">Last Name :</label>
@@ -26,8 +51,7 @@
         id="Lastname"
         placeholder="Enter Last Name"
         name="Lastname"
-        required
-      /><br /><br />
+        required /><br /><br />
 
       <!-- Age -->
       <label for="age">Age :</label>
@@ -57,7 +81,7 @@
 
       <!-- skills -->
 
-      <h6>Skills :</h6>
+      <h5>Skills :</h5>
       <label for="html">HTML :</label>
       <input type="checkbox" id="html" value="html" name="skills"/>
       <label for="css">CSS :</label>
@@ -76,7 +100,10 @@
       
 
       <!-- submit -->
+       <div id="btn">
        <input type="submit" value="Submit">
+      </div>
+      </div>
     </form>
   </body>
 </html>
